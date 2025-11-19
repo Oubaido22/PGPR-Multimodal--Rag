@@ -156,36 +156,7 @@ Project Structure
 - pgpr_images/images/: Image dataset (ignored by default)
 
 
-Small Demo Clips (optional)
 
-You can record short GIFs of the Streamlit UI (chat, image analysis, model comparisons) and add them here:
-
-
-![Chat Demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGltYmVkZWRfZ2lm/3oEjI6SIIHBdRxXI40/giphy.gif)
-
-
-![Image Analysis Demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWluaV9kZW1v/26gslU06I4b1R7iZW/giphy.gif)
-
-
-Data & Models
-- Do not commit large datasets, cache files, or model weights. The .gitignore excludes:
-  - venv/, rag_cache/, ml_models/, pgpr_images/images/
-  - common model artifacts (*.pkl, *.pth, *.pt, *.faiss, etc.)
-- Keep label CSV files (e.g., train_labels.csv, test_labels.csv) to reproduce experiments.
-
-Environment & Secrets
-- Store credentials and private settings in a local .env file (not committed).
-- Do not check in API keys, private certs, or SSH keys. The .gitignore already excludes common secret patterns.
-
-Troubleshooting
-- Sklearn serialization mismatch: If you see CyHalfBinomialLoss errors, use the retrain scripts:
-  python quick_retrain.py
-  python retrain_ml_only.py
-- If caches are missing: run the builder again:
-  python build_enhanced_system.py
-
-Licensing
-- Add your preferred license (e.g., MIT) as LICENSE in the repo root.
 
 Acknowledgements
 - Built with LangChain, FAISS, PyTorch, scikit-learn, and Streamlit. Ollama provides local LLMs (llama3.1).
