@@ -1,0 +1,65 @@
+### Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+.cache/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+### Environments
+venv/
+.venv/
+env/
+.env
+.env.*
+*.env
+
+### OS / Editors
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+
+### Notebooks
+.ipynb_checkpoints/
+
+### App/Data caches and models (do not commit artifacts)
+rag_cache/
+ml_models/
+logs/
+*.log
+
+### Large/binary model files
+*.pkl
+*.joblib
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.onnx
+*.bin
+*.faiss
+
+### Datasets (keep labels CSVs but ignore images by default)
+pgpr_images/images/
+pgpr_images/**/images/
+
+### Secrets/Keys
+*.pem
+*.key
+id_rsa
+id_ecdsa
+*.crt
+*.der
+*.p12
+credentials.json
+secrets.*
+
+### Build artifacts
+dist/
+build/
+
+
